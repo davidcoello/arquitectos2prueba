@@ -1,0 +1,180 @@
+a {
+	color: #212429;
+}
+
+/*******************
+****** HEADER ******
+*******************/
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* Logo */
+#logo img {
+	width: 400px;
+}
+
+#logo h3 {
+	bottom: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+.subtitulo{
+	display: inline-block;
+	align-self: center;
+	position: relative;
+	margin: 0; padding: 0
+	flex-grow: 1;
+}
+
+h1, h2 {
+	color: #212429;
+}
+
+a:link, a:visited {
+	color: #212429;
+	text-decoration: none;
+}
+
+h3 {
+	letter-spacing: 0.2em;
+	font-variant: small-caps;
+	font-size: 1em;
+	font-family: 'Lato', sans-serif
+}
+
+
+
+/* Barra de Navegación */
+
+nav {
+	background-color: #fff;
+}
+nav ul li {
+	font-family: Open Sans, sans-serif;
+	font-weight: 300;
+	font-size: 1.4em;
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px 20px;
+}
+
+.select{
+	color:;
+}
+
+nav ul li:hover {
+	background-color: rgba(33, 36, 41, .4);
+}
+
+nav ul {
+	margin: 0; padding: 0;
+}
+nav a, nav a:visited {
+	color: #212429; text-decoration: none;
+}
+
+/*******************
+****** GALLERY ******
+*******************/
+
+section#contenedor {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+article.imagen {
+	display: inline-block;
+	width: 49%;
+	position: relative;
+}
+
+
+.imagen img {
+	display: block;
+	width: 100%
+}
+
+div.texto {
+	height: 30%;
+	font-weight: 100;
+	width: 80%;
+	background-color: #212429;
+	position: absolute;
+	bottom: 0;
+	color: lightgrey;
+	padding-top: 2%;
+	text-indent: 2%;
+	font-size: 1.4em;
+	opacity: 0.8;
+	border-top-right-radius: 30px	
+}
+
+/*******************
+****** FOOTER******
+*******************/
+
+
+footer {
+	background-color: #212429;
+	color: grey;
+	font-size: 1em;
+	text-align: center;
+	padding-bottom: 10px
+}
+
+
+img.social {
+	width: 48px;
+	margin: 30px 5px;
+	filter: sepia(60%);sepia
+	-moz-filter: sepia(60%);
+	-webkit-filter: sepia(60%);
+}
+
+img.social:hover {
+	filter: sepia(0%);sepia
+	-moz-filter: sepia(0%);
+	-webkit-filter: sepia(0%);
+}
+
+footer p {
+	font-family: Lato,sans-serif;
+	font-weight: 300;
+	letter-spacing: .2em;
+}
+footer p a:link, footer p a:visited {
+	color: grey;
+}
+
+@media all and (max-width: 540px) , (orientation: portrait) {
+	
+
+#logo img{
+	width: 300px;margin: 0 auto:;
+}
+
+header {
+	flex-direction:column;
+}
+
+#logo {
+	align-self:center;
+	-webkit-transition: with 0.8s; ease-out;
+}
+
+.subtitulo {
+	align-self:center;
+	font-size: 1.4em
+}
+
+nav{
+	align-self:center;
+}
+
+}
